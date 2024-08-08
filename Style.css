@@ -1,0 +1,47 @@
+/****** Propriétés CSS globales ***********/
+
+/* Couleurs utilisées */
+:root {
+  --Vert: hsl(75, 94%, 57%);
+  --Blanc: hsl(0, 0%, 100%);
+  --Gris700: hsl(0, 0%, 20%);
+  --Gris800: hsl(0, 0%, 12%);
+  --Gris900: hsl(0, 0%, 8%);
+}
+
+/****** Propriétés CSS par élément ***********/
+
+/* Propriétés générales de la page */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--Gris900);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Mise en place de Flexbox dans Main pour contrôler l'emplacement du contenu */
+main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Création de la carte et mise en forme*/
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 1rem;
+  gap: 1rem;
+  width: 20rem;
+  background-color: var(--Gris800);
+  border: none;
+  border-radius: 1.25rem;
+}
+
+.p {
+  font-size: 14px;
+}

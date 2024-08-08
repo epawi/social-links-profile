@@ -1,34 +1,80 @@
 <!DOCTYPE html>
+<!--Balise qui définit la langue du document-->
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!--Head du document, définit les métadonnées et ne sera pas affiché sur la page-->
+  <head>
+    <!--Elément qui détermine les caractères utilisés dans le document, ici le choix de l'UTF-8 permet d'être le plus universel possible-->
+    <meta charset="UTF-8" />
+    <!--Elément qui permet à la page de s'adapter automatiquement à la taille de la fenêtre de navigation-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Lien vers la feuille de style CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicône qui apparaît dans le navigateur de l'utilisateur.ice à côté du nom de l'onglet -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!--Balises et liens permettant d'utiliser la police d'écriture choisie-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Titre de la page-->
+    <title>Frontend Mentor | Social links profile</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+  <!--Corps du document, ce qui apparaîtra sur la page-->
+  <body>
+    <!--Partie principale, centrale du document-->
+    <main>
+      <!--Carte, élément principal de la page-->
+      <section class="carte">
+        <!--Photo de Jessica Randall-->
+        <img
+          class="photo"
+          src="./assets/images/avatar-jessica.jpeg"
+          alt="Jessica Randall's avatar"
+        />
+        <!--Titre de niveau 1, nom complet de Jessica-->
+        <h1>Jessica Randall</h1>
+        <!--Localisation de Jessica-->
+        <p class="lieu">London, United Kingdom</p>
+        <!--Brève présentation de Jessica-->
+        <p class="bio">"Front-end developer and avid reader."</p>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <!--Section contenant la suite des boutons menant aux réseaux sociaux de Jessica-->
+        <div class="reseaux">
+          <!--Boutons contenant les liens des réseaux sociaux-->
+          <button class="bouton">
+            <strong>GitHub</strong>
+          </button>
+          <button class="bouton">
+            <strong>Frontend Mentor</strong>
+          </button>
+          <button class="bouton">
+            <strong>LinkedIn</strong>
+          </button>
+          <button class="bouton">
+            <strong>Twitter</strong>
+          </button>
+          <button class="bouton">
+            <strong>Instagram</strong>
+          </button>
+        </div>
+      </section>
+    </main>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!--Pied de page-->
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >, coded by
+      <a href="https://www.linkedin.com/in/ninon-commarieu">Ninon Commarieu</a>.
+    </footer>
+  </body>
 </html>
