@@ -7,6 +7,7 @@
   --Gris700: hsl(0, 0%, 20%);
   --Gris800: hsl(0, 0%, 12%);
   --Gris900: hsl(0, 0%, 8%);
+  --spacingmed: 1.714rem;
 }
 
 /****** Propriétés CSS par élément ***********/
@@ -18,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100vh;
 }
 
 /* Mise en place de Flexbox dans Main pour contrôler l'emplacement du contenu */
@@ -32,16 +34,95 @@ main {
 .carte {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  padding: 1rem;
-  gap: 1rem;
-  width: 20rem;
+  align-items: center;
+  padding: 2.857rem;
   background-color: var(--Gris800);
-  border: none;
   border-radius: 1.25rem;
 }
 
-.p {
+/* Mise en forme de la photo de Jessica */
+.photo {
+  width: 6.286rem;
+  height: 6.286rem;
+  border-radius: 71rem;
+  margin-bottom: var(--spacingmed);
+}
+
+/* Mise en page du titre, le nom de Jessica */
+h1 {
+  color: var(--Blanc);
+  font-size: 1.714rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+/* Mise en page du contexnu texte autre que le titre et les boutons */
+p {
   font-size: 14px;
+}
+
+/* Mise en forme de la localisation */
+.lieu {
+  color: var(--Vert);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: var(--spacingmed);
+}
+
+/* Mise en forme de la brève présentation */
+.bio {
+  color: var(--Blanc);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: var(--spacingmed);
+}
+
+/* Mise en page de la section des liens vers les réseaux sociaux */
+.reseaux {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 1.143rem;
+}
+
+/* Mise en forme des boutons */
+.bouton {
+  border: none;
+  border-radius: 0.571rem;
+  background: var(--color-grey-700, #333);
+  padding: 0.857rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.571rem;
+  align-self: stretch;
+  color: var(--Blanc);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+/* Mise en forme du pied de page */
+footer {
+  display: flex;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Mise en forme des liens */
+a {
+  color: var(--Blanc);
+  text-decoration: none;
+}
+
+/* Couleur des liens au survol */
+a:hover {
+  color: var(--Vert);
 }
