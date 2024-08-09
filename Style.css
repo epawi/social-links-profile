@@ -112,7 +112,7 @@ p {
 /* Mise en forme du pied de page */
 footer {
   display: flex;
-  font-size: 14px;
+  font-size: 11px;
   text-align: center;
 }
 
