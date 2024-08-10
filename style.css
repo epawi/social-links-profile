@@ -56,7 +56,6 @@ h1 {
   font-size: 1.714rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%;
   margin: 0;
   padding-bottom: 0;
 }
@@ -72,7 +71,6 @@ p {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%;
 }
 
 /* Mise en forme de la brève présentation */
@@ -81,7 +79,6 @@ p {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
 }
 
 /* Mise en page de la section des liens vers les réseaux sociaux */
@@ -103,7 +100,6 @@ p {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%;
 }
 
 /* Mise en forme du pied de page */
