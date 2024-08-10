@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 99vh;
 }
 
 /* Mise en place de Flexbox dans Main pour contrôler l'emplacement du contenu */
@@ -38,6 +38,8 @@ main {
   padding: 2.857rem;
   background-color: var(--Gris800);
   border-radius: 1.25rem;
+  max-width: 384px;
+  width: 21.5rem;
 }
 
 /* Mise en forme de la photo de Jessica */
@@ -98,9 +100,6 @@ p {
   border-radius: 0.571rem;
   background: var(--color-grey-700, #333);
   padding: 0.857rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.571rem;
   align-self: stretch;
   color: var(--Blanc);
   font-size: 14px;
@@ -111,9 +110,9 @@ p {
 
 /* Mise en forme du pied de page */
 footer {
-  display: flex;
   font-size: 11px;
   text-align: center;
+  color: #d9d9d9;
 }
 
 /* Mise en forme des liens */
@@ -125,4 +124,13 @@ a {
 /* Couleur des liens au survol */
 a:hover {
   color: var(--Vert);
+}
+
+/****** Version mobile : résolution inférieure ou égale à 768px *********/
+
+@media screen and (max-width: 768px) {
+  /* Modification des marges intérieures de la carte */
+  .carte {
+    padding: 1.714rem;
+  }
 }
